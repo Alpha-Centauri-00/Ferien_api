@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 
 def reading_file(year):
-    file_name = f"new_ferien_{year}.json"
+    file_name = f"resource\\new_ferien_{year}.json"
     with open(file_name, 'r', encoding='utf-8') as f:
         data = json.load(f)
     return data
